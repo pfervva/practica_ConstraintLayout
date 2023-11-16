@@ -37,11 +37,13 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="266dp"
+                android:layout_height="115dp"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_marginTop="15dp"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                tools:srcCompat="@drawable/fondo" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -230,7 +232,8 @@
                         app:icon="@android:drawable/stat_notify_sdcard_prepare"
                         app:iconGravity="textTop"
                         app:iconSize="30dp"
-                        app:iconTint="#FFFFFF" />
+                        app:iconTint="#FFFFFF"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
                         android:id="@+id/textView9"
@@ -289,11 +292,14 @@
                     android:layout_marginLeft="15sp"
                     android:layout_marginTop="15sp"
                     android:layout_marginRight="15sp"
-                    android:layout_marginBottom="15sp">
+                    android:layout_marginBottom="15sp"
+                    android:background="#474646"
+                    app:cardCornerRadius="20dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="#494646"
                         android:orientation="horizontal">
 
                         <TextView
@@ -302,7 +308,8 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center_horizontal|center_vertical"
-                            android:text="Aqui estoy :)"
+                            android:text="Aqui estoy por la playa :)"
+                            android:textColor="#FFFFFF"
                             android:textStyle="bold" />
 
                         <ImageView
@@ -310,7 +317,9 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            tools:srcCompat="@tools:sample/avatars" />
+                            android:scaleX="0.9"
+                            android:scaleY="0.9"
+                            tools:srcCompat="@drawable/foto" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
